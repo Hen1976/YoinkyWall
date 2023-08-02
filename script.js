@@ -15,7 +15,7 @@ form.addEventListener('submit', function(event) {
   event.preventDefault();
   const content = message.value;
   if (content.trim() !== '' && author.value.trim() !== '') {
-    createPaste('"' + content + '" by ' + author.value);
+    createPaste(content + ' at ' + author.value);
     message.value = '';
   }
 });
